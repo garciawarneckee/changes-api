@@ -1,11 +1,9 @@
-const express = require("express");
+const app = require("./app");
 
-const app = express();
+const appRoutes = require("./routes/app.routes");
 
-app.get("/", (req, res) => {
-    res.send("Welcome to the internet");
-})
+app.use("/", appRoutes);
 
-const server = app.listen(3000, () => { console.log("Server listening in port 3000"); })
+const server = app.listen(3000, () => { console.log("Server listening in port 3000"); });
 
 module.exports = server;
