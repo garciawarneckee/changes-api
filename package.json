@@ -1,0 +1,25 @@
+{
+  "name": "changes-api",
+  "version": "1.0.0",
+  "description": "Mercado de pases API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "node",
+    "microservices",
+    "express",
+    "mocha"
+  ],
+  "author": "Esteban Garcia Warnecke <garciawarneckee@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  }
+}
